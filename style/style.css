@@ -3,14 +3,3 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: #000;
-  height: 1024px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  left: 0;
-  top: 0;
-  margin: auto;
-  border: 1px solid #fff;
-}
