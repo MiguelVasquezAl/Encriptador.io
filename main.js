@@ -9,6 +9,8 @@ const encriptar = () => {
   };
   const resultado = texto.replace(/[eioua]/g, (c) => sustituciones[c]);
   document.getElementById("resultado").value = resultado;
+
+  document.getElementById("copiar").style.display = "block";
 };
 
 const desencriptar = () => {
@@ -25,6 +27,8 @@ const desencriptar = () => {
     (c) => sustituciones[c]
   );
   document.getElementById("resultado").value = resultado;
+
+  document.getElementById("copiar").style.display = "block";
 };
 
 async function copiar() {

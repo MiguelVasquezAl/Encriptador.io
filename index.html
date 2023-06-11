@@ -15,7 +15,7 @@
       <div class="tittle"><p>a</p></div>
       <div class="cript">
         <div class="texto">
-          <label for="label"></label>
+          <label for="texto"></label>
           <div class="container-input">
             <input type="text" id="texto" placeholder="Ingrese el texto aqui" />
           </div>
@@ -30,11 +30,21 @@
         </div>
         <div class="encriptado">
           <label for="resultado"></label>
-          <input type="text" id="resultado" readonly />
+          <div class="salida">
+            <input
+              type="text"
+              id="resultado"
+              readonly
+              placeholder="Mensaje no encontrado"
+            />
+          </div>
           <button id="copiar">Copiar</button>
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <p>&copy; 2023 Encriptador. Todos los derechos reservados.</p>
+    </footer>
     <script src="./main.js"></script>
   </body>
 </html>
