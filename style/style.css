@@ -2,12 +2,58 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: roboto;
 }
 
+/* ----------DANDO ESTILO AL HEADER Y AL H1--------- */
 .header {
-  background-color: aquamarine;
+  background-color: #0a3871;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  color: #f3f5fc;
+  font-weight: normal;
+  padding: 1%;
 }
 
-.footer {
-  background-color: aquamarine;
+/* --------DANDO ESTILO AL MAIN--------- */
+.main {
+  background-color: #f3f5fc;
+}
+.tittle {
+  font-size: 58px;
+  margin: 0 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-weight: bold;
+}
+.tittle p {
+  font-size: 80px;
+  color: #0a3871;
+}
+.cript {
+  border: 1px solid #0a3871;
+  margin: 2%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.texto {
+  position: relative;
+  border: 2px solid #0a3871;
+}
+#texto {
+  background-color: aqua;
+  border: none;
+  color: #0a3871;
+  width: 350px;
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
 }
