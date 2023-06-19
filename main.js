@@ -36,6 +36,14 @@ async function copiar() {
   await navigator.clipboard.writeText(resultado.value);
 }
 
+document.getElementById("texto").addEventListener("keyup", function (event) {
+  if (event.keyCode === 13) {
+    // Código de la tecla Enter es 13
+    event.preventDefault();
+    encriptar();
+  }
+});
+
 document.getElementById("encriptar").addEventListener("click", encriptar);
 document.getElementById("desencriptar").addEventListener("click", desencriptar);
 document.getElementById("copiar").addEventListener("click", copiar);
