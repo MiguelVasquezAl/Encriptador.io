@@ -67,8 +67,9 @@ textarea {
   font-size: 20px;
   text-align: center;
   justify-content: center;
-  resize: vertical;
-  position: relative;
+  /* resize: vertical;
+  position: relative; */
+  outline: none;
 }
 /* -------DANDO ESTILO A BOTONES-------- */
 
