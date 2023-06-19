@@ -42,7 +42,7 @@ h1 {
   position: relative;
   position: relative;
   width: 98%;
-  height: 250px;
+  height: 210px;
 }
 #texto {
   border: none;
@@ -54,7 +54,6 @@ h1 {
   justify-content: center;
   position: absolute;
   background-color: #f3f5fc;
-  /* overflow-wrap: break-word; */
 }
 #texto::placeholder {
   color: #0a3871;
@@ -66,11 +65,12 @@ h1 {
 textarea {
   font-size: 20px;
   text-align: center;
-  justify-content: center;
-  /* resize: vertical;
-  position: relative; */
+  justify-content: flex-start;
   outline: none;
+  padding: 3rem 5rem;
+  resize: none;
 }
+
 /* -------DANDO ESTILO A BOTONES-------- */
 
 .botones {
@@ -130,7 +130,7 @@ textarea {
     -10px 0px 20px rgba(0, 0, 0, 0.2);
   overflow-wrap: break-word;
 }
-#resultado::placeholder {
+/* #resultado::placeholder {
   display: flex;
   color: #5f5f5f;
   font-size: 16px;
@@ -140,7 +140,7 @@ textarea {
   position: relative;
   top: 25%;
   padding: 2rem;
-}
+} */
 #copiar {
   display: none;
   background-color: #f3f5fc;
