@@ -7,18 +7,15 @@
     <title>Encriptador</title>
     <link rel="stylesheet" href="./sass/style.css" />
   </head>
-  <body>
-    <header class="header">
-      <h1>Encriptador</h1>
-    </header>
+  <body class="ultra__wide">
     <main class="main">
-      <div class="tittle">
+      <div class="main__tittle">
         <p>a</p>
       </div>
-      <div class="cript">
-        <div class="texto">
+      <div class="encrypt">
+        <div class="encrypt__text">
           <label for="texto"></label>
-          <div class="container-input">
+          <div class="encrypt__input">
             <textarea
               type="text"
               id="texto"
@@ -26,17 +23,22 @@
             ></textarea>
           </div>
         </div>
-        <div class="botones">
-          <div class="advertencia">
+        <div class="btn">
+          <div class="btn__advertencia">
             <img src="./img/bi_exclamation-circle-fill.png" alt="advertencia" />
             <p>Solo letras minúsculas y sin acentos</p>
           </div>
-          <button id="encriptar">Encriptar</button>
-          <button id="desencriptar">Desencriptar</button>
+          <button id="btn__encrypt">Encriptar</button>
+          <button id="btn__decrypt">Desencriptar</button>
         </div>
-        <div class="encriptado">
+        <div class="decrypt">
+          <div>
+            <div id="elemento1">Elemento 1</div>
+            <div id="elemento2" class="oculto">Elemento 2</div>
+            <button id="boton">Mostrar Elemento 2</button>
+          </div>
           <label for="resultado"></label>
-          <div class="salida">
+          <div class="decrypt__input">
             <textarea
               type="text"
               id="resultado"
@@ -44,13 +46,10 @@
               placeholder="Mensaje no encontrado"
             ></textarea>
           </div>
-          <button id="copiar">Copiar</button>
+          <button id="decrypt__copy">Copiar</button>
         </div>
       </div>
     </main>
-    <footer class="footer">
-      <p>&copy; 2023 Encriptador. Todos los derechos reservados.</p>
-    </footer>
     <script src="./main.js"></script>
   </body>
 </html>

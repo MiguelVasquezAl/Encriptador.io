@@ -1,3 +1,13 @@
+const elemento1 = document.getElementById("elemento1");
+const elemento2 = document.getElementById("elemento2");
+const boton = document.getElementById("boton");
+
+boton.addEventListener("click", function () {
+  elemento1.style.display = "none";
+  elemento2.style.display = "block";
+});
+// despues
+
 const encriptar = () => {
   const texto = document.getElementById("texto").value;
   const sustituciones = {
@@ -35,14 +45,6 @@ async function copiar() {
   var resultado = document.getElementById("resultado");
   await navigator.clipboard.writeText(resultado.value);
 }
-
-// document.getElementById("texto").addEventListener("keyup", function (event) {
-//   if (event.keyCode === 13) {
-//     // Código de la tecla Enter es 13
-//     event.preventDefault();
-//     encriptar();
-//   }
-// });
 
 document.getElementById("encriptar").addEventListener("click", encriptar);
 document.getElementById("desencriptar").addEventListener("click", desencriptar);
