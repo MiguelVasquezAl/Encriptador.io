@@ -1,10 +1,10 @@
-const elemento1 = document.getElementById("elemento1");
-const elemento2 = document.getElementById("elemento2");
-const boton = document.getElementById("boton");
+const elemento1 = document.getElementById("nohidden");
+const elemento2 = document.getElementsByClassName("hidden");
+const boton = document.getElementById("btn__encrypt");
 
 boton.addEventListener("click", function () {
-  elemento1.style.display = "none";
-  elemento2.style.display = "block";
+  nohidden.style.display = "none";
+  hidden.style.display = "flex";
 });
 // despues
 

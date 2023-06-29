@@ -32,21 +32,22 @@
           <button id="btn__decrypt">Desencriptar</button>
         </div>
         <div class="decrypt">
-          <div>
-            <div id="elemento1">Elemento 1</div>
-            <div id="elemento2" class="oculto">Elemento 2</div>
-            <button id="boton">Mostrar Elemento 2</button>
+          <div id="nohidden">
+            <img src="./img/Muñeco.svg" alt="muñeco" />
+            <p>hola</p>
           </div>
-          <label for="resultado"></label>
-          <div class="decrypt__input">
-            <textarea
-              type="text"
-              id="resultado"
-              readonly
-              placeholder="Mensaje no encontrado"
-            ></textarea>
+          <div class="hidden">
+            <label for="resultado"></label>
+            <div class="decrypt__input">
+              <textarea
+                type="text"
+                id="resultado"
+                readonly
+                placeholder="Mensaje no encontrado"
+              ></textarea>
+            </div>
+            <button id="decrypt__copy">Copiar</button>
           </div>
-          <button id="decrypt__copy">Copiar</button>
         </div>
       </div>
     </main>
