@@ -7,6 +7,10 @@
 body {
   background-color: #0a3871;
 }
+body.ultra__wide {
+  display: flex;
+  flex-wrap: wrap;
+}
 body.ultra__wide .main {
   max-width: 1440px;
   margin: 0 auto;
@@ -15,4 +19,10 @@ body.ultra__wide .main {
 
 .hidden {
   display: none;
-} /*# sourceMappingURL=style.css.map */
+}
+
+.auto_resize {
+  overflow: hidden;
+  height: auto;
+  resize: none;
+}/*# sourceMappingURL=style.css.map */

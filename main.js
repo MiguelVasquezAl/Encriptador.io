@@ -1,12 +1,16 @@
-const elemento1 = document.getElementById("nohidden");
-const elemento2 = document.getElementsByClassName("hidden");
+//Ocultar y mostrar elementos
 const boton = document.getElementById("btn__encrypt");
-
+const elementosHidden = document.getElementsByClassName("hidden");
+const elementoNoHidden = document.getElementById("nohidden");
 boton.addEventListener("click", function () {
-  nohidden.style.display = "none";
-  hidden.style.display = "flex";
+  elementoNoHidden.style.display = "none";
+
+  for (let i = 0; i < elementosHidden.length; i++) {
+    elementosHidden[i].style.display = "block";
+  }
 });
-// despues
+
+// Logicar de la encriptacion
 
 const encriptar = () => {
   const texto = document.getElementById("texto").value;
@@ -38,7 +42,7 @@ const desencriptar = () => {
   );
   document.getElementById("resultado").value = resultado;
 
-  document.getElementById("copiar").style.display = "block";
+  document.getElementById("decrypt__copy").style.display = "block";
 };
 
 async function copiar() {
@@ -46,6 +50,6 @@ async function copiar() {
   await navigator.clipboard.writeText(resultado.value);
 }
 
-document.getElementById("encriptar").addEventListener("click", encriptar);
-document.getElementById("desencriptar").addEventListener("click", desencriptar);
-document.getElementById("copiar").addEventListener("click", copiar);
+document.getElementById("btn__encrypt").addEventListener("click", encriptar);
+document.getElementById("btn__decrypt").addEventListener("click", desencriptar);
+document.getElementById("decrypt__copy").addEventListener("click", copiar);

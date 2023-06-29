@@ -7,6 +7,8 @@
 body {
   background-color: #0a3871;
   &.ultra__wide {
+    display: flex;
+    flex-wrap: wrap;
     .main {
       max-width: 1440px;
       margin: 0 auto;
@@ -14,8 +16,14 @@ body {
     }
   }
 }
+
+// pendientes de ordenar
 .hidden {
   display: none;
-  background-color: #0a3871;
+}
+.auto_resize {
+  overflow: hidden;
+  height: auto;
+  resize: none;
 }
 // MEDIAS QUERIES

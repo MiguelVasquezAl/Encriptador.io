@@ -9,45 +9,53 @@
   </head>
   <body class="ultra__wide">
     <main class="main">
-      <div class="main__tittle">
-        <p>a</p>
-      </div>
       <div class="encrypt">
-        <div class="encrypt__text">
-          <label for="texto"></label>
-          <div class="encrypt__input">
-            <textarea
-              type="text"
-              id="texto"
-              placeholder="Ingrese el texto aqui"
-            ></textarea>
-          </div>
+        <div class="encrypt__tittle">
+          <p>a</p>
         </div>
-        <div class="btn">
-          <div class="btn__advertencia">
-            <img src="./img/bi_exclamation-circle-fill.png" alt="advertencia" />
-            <p>Solo letras minúsculas y sin acentos</p>
-          </div>
-          <button id="btn__encrypt">Encriptar</button>
-          <button id="btn__decrypt">Desencriptar</button>
-        </div>
-        <div class="decrypt">
-          <div id="nohidden">
-            <img src="./img/Muñeco.svg" alt="muñeco" />
-            <p>hola</p>
-          </div>
-          <div class="hidden">
-            <label for="resultado"></label>
-            <div class="decrypt__input">
+        <div class="encrypt__home">
+          <div class="encrypt__text">
+            <label for="texto"></label>
+            <div class="encrypt__input">
               <textarea
+                class="auto_resize"
                 type="text"
-                id="resultado"
-                readonly
-                placeholder="Mensaje no encontrado"
+                id="texto"
+                placeholder="Ingrese el texto aqui"
               ></textarea>
             </div>
-            <button id="decrypt__copy">Copiar</button>
           </div>
+          <div class="btn">
+            <div class="btn__advertencia">
+              <img
+                src="./img/bi_exclamation-circle-fill.png"
+                alt="advertencia"
+              />
+              <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <button id="btn__encrypt">Encriptar</button>
+            <button id="btn__decrypt">Desencriptar</button>
+          </div>
+        </div>
+      </div>
+      <div class="decrypt">
+        <div id="nohidden">
+          <img src="./img/Muñeco.svg" alt="muñeco" />
+          <p>Ningún mensaje fue encontrado</p>
+          <p>Ingresa el texto que desees enciptar o desencriptar</p>
+        </div>
+        <div class="hidden">
+          <label for="resultado"></label>
+          <div class="decrypt__input">
+            <textarea
+              class="auto_resize"
+              type="text"
+              id="resultado"
+              readonly
+              placeholder="Mensaje no encontrado"
+            ></textarea>
+          </div>
+          <button id="decrypt__copy">Copiar</button>
         </div>
       </div>
     </main>
