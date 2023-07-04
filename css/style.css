@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+}
+
+body {
+  background-color: #0a3871;
+}
+body.ultra__wide .main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #e5e5e5;
+}
+body.ultra__wide .main .encrypt {
+  width: 93%;
+  margin: 0em 1em 0em 1em;
+}
+body.ultra__wide .main .encrypt .encrypt__tittle p {
+  color: #0a3871;
+  font-size: 4em;
+  font-weight: bold;
+}
+body.ultra__wide .main .descrypt {
+  width: 93%;
+  margin: 0em 1em 0em 1em;
+  padding-bottom: 1.5em;
+}
+body.ultra__wide .main .descrypt .hidden {
+  display: none;
+}
+
+.auto_resize {
+  overflow: hidden;
+  height: auto;
+  resize: none;
+}
+
+@media (max-width: 768px) {
+  .img__hide {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
