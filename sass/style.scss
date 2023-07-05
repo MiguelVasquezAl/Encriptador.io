@@ -39,6 +39,10 @@ body {
               height: 20em;
               textarea {
                 @include textarea($primarycolor);
+                &::placeholder {
+                  font-size: 2.5em;
+                  color: $secondarycolor;
+                }
               }
             }
           }
