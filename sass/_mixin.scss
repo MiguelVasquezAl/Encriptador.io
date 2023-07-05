@@ -2,3 +2,11 @@
   width: 93%;
   margin: 0em 1em 0em 1em;
 }
+@mixin textarea($fondo) {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  overflow: hidden;
+  background-color: $fondo;
+  border: none;
+}

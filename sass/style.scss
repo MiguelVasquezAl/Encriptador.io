@@ -26,6 +26,21 @@ body {
             color: $secondarycolor;
             font-size: 4em;
             font-weight: bold;
+            padding-bottom: 0.8em;
+          }
+        }
+        .encrypt__home {
+          .encrypt__text {
+            .encrypt__input {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 20em;
+              textarea {
+                @include textarea($primarycolor);
+              }
+            }
           }
         }
       }
@@ -41,12 +56,6 @@ body {
 }
 
 // pendientes de ordenar
-
-.auto_resize {
-  overflow: hidden;
-  height: auto;
-  resize: none;
-}
 // MEDIAS QUERIES
 // agregar media queries
 @media (max-width: 768px) {
