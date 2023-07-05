@@ -87,8 +87,29 @@ body {
       .descrypt {
         @include centrador();
         padding-bottom: 1.5em;
-        .hidden {
-          display: none;
+        padding: 2em 0;
+        text-align: center;
+        .descrypt__area {
+          background-color: white;
+          height: 10em;
+          border-radius: 20px;
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          #nohidden {
+            color: $tertiarycolor;
+            padding: 0 3em;
+            h2 {
+              padding-bottom: 1.5rem;
+            }
+            p {
+              font-size: 1rem;
+            }
+          }
+          .hidden {
+            display: none;
+          }
         }
       }
     }

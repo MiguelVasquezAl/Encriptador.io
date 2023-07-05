@@ -40,24 +40,26 @@
         </div>
       </div>
       <div class="descrypt">
-        <div id="nohidden">
-          <div class="img__hide">
-            <img src="./img/Muñeco.svg" alt="muñeco" />
+        <div class="descrypt__area">
+          <div id="nohidden">
+            <div class="img__hide">
+              <img src="./img/Muñeco.svg" alt="muñeco" />
+            </div>
+            <h2>Ningún mensaje fue encontrado</h2>
+            <p>Ingresa el texto que desees enciptar o desencriptar</p>
           </div>
-          <p>Ningún mensaje fue encontrado</p>
-          <p>Ingresa el texto que desees enciptar o desencriptar</p>
-        </div>
-        <div class="hidden">
-          <label for="resultado"></label>
-          <div class="decrypt__input">
-            <textarea
-              type="text"
-              id="resultado"
-              readonly
-              placeholder="Mensaje no encontrado"
-            ></textarea>
+          <div class="hidden">
+            <label for="resultado"></label>
+            <div class="decrypt__input">
+              <textarea
+                type="text"
+                id="resultado"
+                readonly
+                placeholder="Mensaje no encontrado"
+              ></textarea>
+            </div>
+            <button id="decrypt__copy">Copiar</button>
           </div>
-          <button id="decrypt__copy">Copiar</button>
         </div>
       </div>
     </main>

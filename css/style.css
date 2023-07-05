@@ -95,8 +95,29 @@ body.ultra__wide .main .descrypt {
   width: 93%;
   margin: 0em 1em 0em 1em;
   padding-bottom: 1.5em;
+  padding: 2em 0;
+  text-align: center;
 }
-body.ultra__wide .main .descrypt .hidden {
+body.ultra__wide .main .descrypt .descrypt__area {
+  background-color: white;
+  height: 10em;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.ultra__wide .main .descrypt .descrypt__area #nohidden {
+  color: #67808e;
+  padding: 0 3em;
+}
+body.ultra__wide .main .descrypt .descrypt__area #nohidden h2 {
+  padding-bottom: 1.5rem;
+}
+body.ultra__wide .main .descrypt .descrypt__area #nohidden p {
+  font-size: 1rem;
+}
+body.ultra__wide .main .descrypt .descrypt__area .hidden {
   display: none;
 }
 
