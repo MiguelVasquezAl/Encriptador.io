@@ -26,24 +26,39 @@ body {
             color: $secondarycolor;
             font-size: 4em;
             font-weight: bold;
-            padding-bottom: 0.8em;
+            padding-bottom: 0.5em;
           }
         }
         .encrypt__home {
           .encrypt__text {
+            padding: 2em 0;
             .encrypt__input {
               width: 100%;
               display: flex;
-              justify-content: center;
+              flex-direction: column;
               align-items: center;
-              height: 20em;
+              min-height: 20em;
               textarea {
                 @include textarea($primarycolor);
+                font-size: 30px;
+                color: $secondarycolor;
+                flex: 1;
+                height: auto;
                 &::placeholder {
-                  font-size: 2.5em;
+                  font-size: 2rem;
                   color: $secondarycolor;
                 }
               }
+            }
+          }
+          .btn {
+            background-color: aqua;
+            .btn__adverted {
+              font-size: 0.8rem;
+              color: gray;
+              display: flex;
+              gap: 0.5em;
+              align-items: center;
             }
           }
         }
