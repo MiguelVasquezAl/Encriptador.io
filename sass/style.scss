@@ -52,13 +52,21 @@ body {
             }
           }
           .btn {
-            background-color: aqua;
             .btn__adverted {
               font-size: 0.8rem;
-              color: gray;
+              color: $tertiarycolor;
               display: flex;
               gap: 0.5em;
               align-items: center;
+            }
+            .btn__principal {
+              padding: 2em 0;
+              display: flex;
+              flex-wrap: wrap;
+              background-color: aqua;
+              #btn__encrypt {
+                color: aqua;
+              }
             }
           }
         }

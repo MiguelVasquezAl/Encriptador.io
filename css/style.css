@@ -58,15 +58,21 @@ body.ultra__wide .main .encrypt .encrypt__home .encrypt__text .encrypt__input te
   font-size: 2rem;
   color: #0a3871;
 }
-body.ultra__wide .main .encrypt .encrypt__home .btn {
-  background-color: aqua;
-}
 body.ultra__wide .main .encrypt .encrypt__home .btn .btn__adverted {
   font-size: 0.8rem;
-  color: gray;
+  color: #67808e;
   display: flex;
   gap: 0.5em;
   align-items: center;
+}
+body.ultra__wide .main .encrypt .encrypt__home .btn .btn__principal {
+  padding: 2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: aqua;
+}
+body.ultra__wide .main .encrypt .encrypt__home .btn .btn__principal #btn__encrypt {
+  color: aqua;
 }
 body.ultra__wide .main .descrypt {
   width: 93%;
