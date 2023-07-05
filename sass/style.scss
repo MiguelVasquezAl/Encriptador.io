@@ -60,12 +60,25 @@ body {
               align-items: center;
             }
             .btn__principal {
-              padding: 2em 0;
+              padding: 1.5em 0;
               display: flex;
               flex-wrap: wrap;
-              background-color: aqua;
+              gap: 20px;
               #btn__encrypt {
-                color: aqua;
+                @include btn(
+                  $primarycolor,
+                  $secondarycolor,
+                  $secondarycolor,
+                  8.7rem
+                );
+              }
+              #btn__decrypt {
+                @include btn(
+                  $secondarycolor,
+                  $primarycolor,
+                  $secondarycolor,
+                  8rem
+                );
               }
             }
           }

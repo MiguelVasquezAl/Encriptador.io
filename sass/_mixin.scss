@@ -11,3 +11,14 @@
   border: none;
   outline: none;
 }
+
+@mixin btn($color, $fondo, $border, $width) {
+  color: $color;
+  background-color: $fondo;
+  font-size: 1rem;
+  padding: 1.4rem $width;
+  border-radius: 1.5em;
+  border: 2px solid $border;
+  outline: none;
+  cursor: pointer;
+}
