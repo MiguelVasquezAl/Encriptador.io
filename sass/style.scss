@@ -37,7 +37,7 @@ body {
               display: flex;
               flex-direction: column;
               align-items: center;
-              min-height: 20em;
+              min-height: 15em;
               textarea {
                 @include textarea($primarycolor);
                 font-size: 30px;
@@ -64,6 +64,8 @@ body {
               display: flex;
               flex-wrap: wrap;
               gap: 20px;
+              justify-content: center;
+              align-items: center;
               #btn__encrypt {
                 @include btn(
                   $primarycolor,
@@ -91,7 +93,7 @@ body {
         text-align: center;
         .descrypt__area {
           background-color: white;
-          height: 20em;
+          height: 26em;
           border-radius: 20px;
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
           display: flex;
@@ -109,24 +111,30 @@ body {
           }
           .hidden {
             display: none;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
             .decrypt__input {
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              // min-height: 10em;
-              background-color: aqua;
+              height: 20em;
+              border: none;
               textarea {
-                @include textarea(white);
-                font-size: 30px;
-                color: $secondarycolor;
-                flex: 1;
-                height: auto;
+                height: 100%;
+                width: 100%;
+                padding: 20px;
+                border: none;
+                outline: none;
+                font-size: 25px;
+                color: $tertiarycolor;
                 &::placeholder {
                   font-size: 2rem;
                   color: $secondarycolor;
                 }
               }
+            }
+            #decrypt__copy {
+              margin-top: auto;
+              @include btn($secondarycolor, white, $secondarycolor, 7rem);
+              border: 1px solid $secondarycolor;
             }
           }
         }
