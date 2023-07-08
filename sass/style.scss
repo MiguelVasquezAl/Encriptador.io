@@ -24,6 +24,11 @@ body {
         width: 50%;
         @include centrador();
         .encrypt__tittle {
+          display: flex;
+          text-align: center;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 1em;
           p {
             color: $secondarycolor;
             font-size: 4em;
