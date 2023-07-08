@@ -10,6 +10,7 @@
 
 body {
   background-color: $secondarycolor;
+
   &.ultra__wide {
     .main {
       display: flex;
@@ -20,6 +21,7 @@ body {
       margin: 0 auto;
       background-color: $primarycolor;
       .encrypt {
+        width: 50%;
         @include centrador();
         .encrypt__tittle {
           p {
@@ -71,7 +73,7 @@ body {
                   $primarycolor,
                   $secondarycolor,
                   $secondarycolor,
-                  8.7rem
+                  8.5rem
                 );
               }
               #btn__decrypt {
@@ -79,7 +81,7 @@ body {
                   $secondarycolor,
                   $primarycolor,
                   $secondarycolor,
-                  8rem
+                  7.8rem
                 );
               }
             }
@@ -143,11 +145,26 @@ body {
   }
 }
 
-// pendientes de ordenar
 // MEDIAS QUERIES
-// agregar media queries
 @media (max-width: 768px) {
   .img__hide {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  body.ultra__wide .main {
+    display: flex;
+    flex-wrap: nowrap;
+    .encrypt {
+      height: 100vh;
+      .encrypt__input {
+        height: 50vh;
+        padding-left: 15%;
+      }
+    }
+    .descrypt {
+      height: 100vh;
+    }
   }
 }
