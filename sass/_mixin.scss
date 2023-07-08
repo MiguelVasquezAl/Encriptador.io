@@ -22,3 +22,9 @@
   outline: none;
   cursor: pointer;
 }
+
+@mixin encript() {
+  display: flex;
+  justify-content: center;
+  width: 289px;
+}

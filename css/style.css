@@ -135,8 +135,9 @@ body.ultra__wide .main .descrypt .descrypt__area .hidden .decrypt__input textare
   width: 100%;
   padding: 20px;
   border: none;
-  outline: none;
   font-size: 25px;
+  outline: none;
+  resize: none;
   color: #67808e;
 }
 body.ultra__wide .main .descrypt .descrypt__area .hidden .decrypt__input textarea::-moz-placeholder {
@@ -174,10 +175,38 @@ body.ultra__wide .main .descrypt .descrypt__area .hidden #decrypt__copy {
     height: 100vh;
   }
   body.ultra__wide .main .encrypt .encrypt__input {
-    height: 50vh;
+    height: 60vh;
     padding-left: 15%;
   }
+  body.ultra__wide .main .encrypt .encrypt__home .btn {
+    padding-left: 15%;
+  }
+  body.ultra__wide .main .encrypt .encrypt__home .btn .btn__principal {
+    justify-content: flex-start;
+  }
+  body.ultra__wide .main .encrypt .encrypt__home .btn .btn__principal #btn__encrypt {
+    display: flex;
+    justify-content: center;
+    width: 289px;
+  }
+  body.ultra__wide .main .encrypt .encrypt__home .btn .btn__principal #btn__decrypt {
+    display: flex;
+    justify-content: center;
+    width: 289px;
+  }
   body.ultra__wide .main .descrypt {
+    width: 50%;
     height: 100vh;
+    position: relative;
+    right: 20px;
+  }
+  body.ultra__wide .main .descrypt .descrypt__area {
+    height: 100%;
+  }
+  body.ultra__wide .main .descrypt .descrypt__area .hidden .decrypt__input {
+    height: 86%;
+  }
+  body.ultra__wide .main .descrypt .descrypt__area .hidden .decrypt__input textarea {
+    height: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

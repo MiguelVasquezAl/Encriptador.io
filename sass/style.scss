@@ -124,8 +124,9 @@ body {
                 width: 100%;
                 padding: 20px;
                 border: none;
-                outline: none;
                 font-size: 25px;
+                outline: none;
+                resize: none;
                 color: $tertiarycolor;
                 &::placeholder {
                   font-size: 2rem;
@@ -159,12 +160,40 @@ body {
     .encrypt {
       height: 100vh;
       .encrypt__input {
-        height: 50vh;
+        height: 60vh;
         padding-left: 15%;
+      }
+      .encrypt__home {
+        .btn {
+          padding-left: 15%;
+          .btn__principal {
+            justify-content: flex-start;
+            #btn__encrypt {
+              @include encript();
+            }
+            #btn__decrypt {
+              @include encript();
+            }
+          }
+        }
       }
     }
     .descrypt {
+      width: 50%;
       height: 100vh;
+      position: relative;
+      right: 20px;
+      .descrypt__area {
+        height: 100%;
+        .hidden {
+          .decrypt__input {
+            height: 86%;
+            textarea {
+              height: 100%;
+            }
+          }
+        }
+      }
     }
   }
 }
